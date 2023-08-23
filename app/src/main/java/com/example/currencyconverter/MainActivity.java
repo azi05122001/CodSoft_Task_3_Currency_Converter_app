@@ -190,12 +190,12 @@ public class MainActivity extends AppCompatActivity {
 
                              ////// INR to other currency///////
 
-                if(sp1.getSelectedItem().toString() == "" && sp2.getSelectedItem().toString() == "Euro")
+                if(sp1.getSelectedItem().toString() == "Indian Rupees" && sp2.getSelectedItem().toString() == "Euro")
                 {
                     tot = amt *0.011 ;
                     Toast.makeText(getApplicationContext(),tot.toString(),Toast.LENGTH_LONG).show();
                 }
-                if(sp1.getSelectedItem().toString() == "Euro" && sp2.getSelectedItem().toString() == "")
+                if(sp1.getSelectedItem().toString() == "Euro" && sp2.getSelectedItem().toString() == "Indian Rupees")
                 {
                     tot = amt / 0.011;
                     Toast.makeText(getApplicationContext(),tot.toString(),Toast.LENGTH_LONG).show();
